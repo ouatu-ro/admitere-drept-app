@@ -37,7 +37,7 @@ def reset_score():
 
 def main():
     # Sidebar to select the year
-    year = st.sidebar.selectbox("Select a Year", ["2012", "2013", "2014", "2015", "2016", "2017", "2018"], on_change=reset_score)
+    year = st.sidebar.selectbox("Alege anul", ["2012", "2013", "2014", "2015", "2016", "2017", "2018"], on_change=reset_score)
     with open('qa.json', 'r') as f:
         data = json.load(f)
     # Questions and answers for the selected year
